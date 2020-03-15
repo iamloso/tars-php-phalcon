@@ -1,0 +1,21 @@
+{
+    "name" : "user-httpserver",
+    "description": "microservice for user's data",
+    "require": {
+        "phalcon/incubator": "^3.4",
+        "phptars/tars-server": "~0.1",
+        "phptars/tars-deploy": "~0.1",
+        "phptars/tars2php": "~0.1",
+        "phptars/tars-log": "~0.1",
+        "ext-zip" : ">=0.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "HttpServer\\" : "./"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts" : {
+        "deploy" : "\\Tars\\deploy\\Deploy::run"
+    }
+}

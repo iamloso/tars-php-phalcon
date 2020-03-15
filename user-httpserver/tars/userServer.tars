@@ -1,0 +1,16 @@
+module serviceservant
+{
+        struct OutStruct {
+            0 require string code='';
+            1 require string desc='';
+            2 require string result='';
+            3 require map<string, string> data;
+        };
+
+
+        interface ServiceInterface
+        {
+            OutStruct request();
+        };
+
+}

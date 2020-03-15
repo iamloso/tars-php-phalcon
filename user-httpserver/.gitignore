@@ -1,0 +1,6 @@
+src/vendor/*
+src/*.tar.gz
+composer.lock
+.idea/
+database/LoalhostMysqlDbConfig.php
+
